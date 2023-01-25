@@ -33,6 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"got": "^12.5.3",
 		"magister-scraper": "^1.0.5"
 	}
 }

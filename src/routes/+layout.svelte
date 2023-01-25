@@ -1,15 +1,17 @@
-<script>
+<script lang="ts">
 	import '../app.css';
+	import Header from '$components/main/header.svelte';
+	import type { LayoutServerData } from './$types';
+
+	export let data: LayoutServerData;
 </script>
 
-<nav>
-	<a href="/">Home</a>
-	<a href="/b">b</a>
-</nav>
-
-<header class="w-full h-16 flex items-center pl-12 bg-blue-400">
-	<h1 class="text-white text-4xl font-semibold">Cijfers</h1>
-</header>
-<main class="p-12 -mt-6">
-	<slot />
-</main>
+<svelte:head>
+	<link rel="stylesheet" href="/styles/satoshi.css" />
+</svelte:head>
+<div class="flex flex-col items-center w-full h-full min-h-screen bg-zinc-800">
+	<Header photo={data.photo} name={data.name} />
+	<main class="w-11/12 pt-6">
+		<slot />
+	</main>
+</div>
