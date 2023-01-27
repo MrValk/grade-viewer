@@ -2,7 +2,10 @@ import type Magister from 'magister-scraper';
 import type { Grade, MagisterGrade, MagisterGradeInfo } from '$models/grade';
 import type { SchoolYear } from '$models/schoolYear';
 
-export default async function getGrades(client: Magister, schoolYear: SchoolYear): Promise<Grade[]> {
+export default async function getGrades(
+	client: Magister,
+	schoolYear: SchoolYear
+): Promise<Grade[]> {
 	// Call the Magister API to get all grades
 	const response = await client.get(
 		`https://${client.hostname}/api/personen/${client.userId}/aanmeldingen/${
@@ -21,8 +24,14 @@ export default async function getGrades(client: Magister, schoolYear: SchoolYear
 			item.CijferPeriode.Naam !== 'PTA' &&
 			item.CijferPeriode.Naam !== 'Eind'
 	);
+	// Sort by date
+	filtered.sort((a: MagisterGrade, b: MagisterGrade) => {
+		const dateA = new Date(a.DatumIngevoerd);
+		const dateB = new Date(b.DatumIngevoerd);
+		return dateA.getTime() - dateB.getTime();
+	});
 
-	// Format the data to fit the SchoolYear type and return it
+	// Format the data to fit the Grade type and return it
 	return await Promise.all(
 		filtered.map(async (grade: MagisterGrade): Promise<Grade> => {
 			// Call the Magister API to get specific information on every grade
@@ -31,7 +40,7 @@ export default async function getGrades(client: Magister, schoolYear: SchoolYear
 			);
 			const { KolomNaam, KolomOmschrijving, Weging } = response;
 
-			// Format the data to fit the SchoolYear type
+			// Format the data to fit the Grade type
 			return {
 				id: grade.CijferId,
 				name: KolomNaam,

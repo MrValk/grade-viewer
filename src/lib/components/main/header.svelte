@@ -8,31 +8,37 @@
 </script>
 
 <header class="flex items-center w-11/12 justify-center h-20 border-b border-gray-600">
-	<h1 class="text-white text-4xl w-full font-bold">Magister Clone</h1>
-	<nav class="flex items-center justify-between gap-12 text-xl text-white">
-		<a
-			class={`${
-				$page.route.id === '/agenda' ? 'border-b-white' : 'border-transparent'
-			} border-b-2 border-t-2 border-t-transparent hover:text-gray-200 hover:border-b-gray-200 transition`}
-			href="/agenda">Agenda</a
+	<a class="text-4xl w-full font-bold hover:text-gray-300 transition" href="/"
+		><h1>Magister Clone</h1></a
+	>
+	<nav class="flex items-center justify-between gap-12 text-xl">
+		<a class="relative flex flex-col hover:text-gray-300 transition" href="/agenda"
+			>Agenda<span
+				class={`absolute bottom-0 rounded-full bg-white ${
+					$page.route.id === '/agenda' ? 'w-full' : 'w-0'
+				}`}
+			/></a
 		>
-		<a
-			class={`${
-				$page.route.id === '/' ? 'border-b-white' : 'border-transparent'
-			} border-b-2 border-t-2 border-t-transparent hover:text-gray-200 hover:border-b-gray-200 transition`}
-			href="/">Cijfers</a
+		<a class="relative flex flex-col hover:text-gray-300 transition" href="/cijfers"
+			>Cijfers<span
+				class={`absolute bottom-0 rounded-full bg-white ${
+					$page.route.id === '/cijfers' ? 'w-full' : 'w-0'
+				}`}
+			/></a
 		>
-		<a
-			class={`${
-				$page.route.id === '/absenties' ? 'border-b-white' : 'border-transparent'
-			} border-b-2 border-t-2 border-t-transparent hover:text-gray-200 hover:border-b-gray-200 transition`}
-			href="/absenties">Absenties</a
+		<a class="relative flex flex-col hover:text-gray-300 transition" href="/absenties"
+			>Absenties<span
+				class={`absolute bottom-0 rounded-full bg-white ${
+					$page.route.id === '/absenties' ? 'w-full' : 'w-0'
+				}`}
+			/></a
 		>
-		<a
-			class={`${
-				$page.route.id === '/berichten' ? 'border-b-white' : 'border-transparent'
-			} border-b-2 border-t-2 border-t-transparent hover:text-gray-200 hover:border-b-gray-200 transition`}
-			href="/berichten">Berichten</a
+		<a class="relative flex flex-col hover:text-gray-300 transition" href="/berichten"
+			>Berichten<span
+				class={`absolute bottom-0 rounded-full bg-white ${
+					$page.route.id === '/berichten' ? 'w-full' : 'w-0'
+				}`}
+			/></a
 		>
 
 		<a href="https://minecraft.net" class="flex items-center gap-6 ml-24">
@@ -43,3 +49,18 @@
 		</a>
 	</nav>
 </header>
+
+<style lang="scss">
+	a {
+		&:hover span {
+			width: 100%;
+			background-color: rgb(209 213 219); // bg-gray-300
+		}
+
+		span {
+			height: 2px;
+
+			transition: width 150ms ease-in-out;
+		}
+	}
+</style>
