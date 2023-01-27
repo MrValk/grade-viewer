@@ -7,3 +7,5 @@ export const client = await Magister.new({
 	password: MAGISTER_PASSWORD || '',
 	hostname: MAGISTER_HOSTNAME || ''
 });
+
+export const defaultSchoolYearIndex = 0;

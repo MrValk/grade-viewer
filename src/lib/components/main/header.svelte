@@ -3,8 +3,6 @@
 
 	export let photo: string;
 	export let name: string;
-
-	$: console.log($page.route.id);
 </script>
 
 <header class="flex items-center w-11/12 justify-center h-20 border-b border-gray-600">
