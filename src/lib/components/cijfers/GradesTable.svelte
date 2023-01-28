@@ -83,7 +83,7 @@
 </table>
 
 <style lang="scss">
-	$cellWidth: 4rem;
+	@use 'src/_vars.scss' as *;
 
 	.w-cell {
 		width: $cellWidth;
