@@ -1,0 +1,1982 @@
+[
+  {
+    "id": 14529532,
+    "name": "KC101",
+    "description": "cijfer periode 1 Grammatica challenge Latijn",
+    "score": 7.7,
+    "weight": 7,
+    "subject": {
+      "id": 1010403,
+      "name": "klassieke cultuur",
+      "abbreviation": "KC"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "M.L. Kopinga",
+      "abbreviation": "KOM"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-10-04T14:05:04.000Z"
+  },
+  {
+    "id": 14529581,
+    "name": "KC102",
+    "description": "cijfer periode 1 SO Grieks bijv.nw.",
+    "score": 8.1,
+    "weight": 7,
+    "subject": {
+      "id": 1010403,
+      "name": "klassieke cultuur",
+      "abbreviation": "KC"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "M.L. Kopinga",
+      "abbreviation": "KOM"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-10-04T14:07:44.000Z"
+  },
+  {
+    "id": 14530645,
+    "name": "Du101",
+    "description": "cijfer periode 1 SO (maximaal 2)",
+    "score": 9.6,
+    "weight": 3,
+    "subject": {
+      "id": 1010397,
+      "name": "Duits",
+      "abbreviation": "Du"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "F. Vermeer",
+      "abbreviation": "VMF"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-10-06T18:47:19.000Z"
+  },
+  {
+    "id": 14537953,
+    "name": "Ak101",
+    "description": "cijfer periode 1 SO H5",
+    "score": 9,
+    "weight": 8,
+    "subject": {
+      "id": 1010395,
+      "name": "aardrijkskunde",
+      "abbreviation": "Ak"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "P. Welling",
+      "abbreviation": "WEL"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-10-08T15:38:20.000Z"
+  },
+  {
+    "id": 14609627,
+    "name": "Ak102",
+    "description": "cijfer periode 1 Toets H5 (TW1)",
+    "score": 5.6,
+    "weight": 16,
+    "subject": {
+      "id": 1010395,
+      "name": "aardrijkskunde",
+      "abbreviation": "Ak"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "P. Welling",
+      "abbreviation": "WEL"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-10-15T14:53:23.000Z"
+  },
+  {
+    "id": 14627129,
+    "name": "KC103",
+    "description": "cijfer periode 1 Toets Latijn Caesar (TW1)",
+    "score": 8,
+    "weight": 12,
+    "subject": {
+      "id": 1010403,
+      "name": "klassieke cultuur",
+      "abbreviation": "KC"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "M.L. Kopinga",
+      "abbreviation": "KOM"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-10-28T11:36:19.000Z"
+  },
+  {
+    "id": 14636874,
+    "name": "Fa102",
+    "description": "cijfer periode 1 Toets Chapitre 1",
+    "score": 8.2,
+    "weight": 5,
+    "subject": {
+      "id": 1010400,
+      "name": "Frans",
+      "abbreviation": "Fa"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "A. Ferrec",
+      "abbreviation": "VWR"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-11-02T15:57:05.000Z"
+  },
+  {
+    "id": 14627135,
+    "name": "Du102",
+    "description": "cijfer periode 1 Kapitel 10 en 11 (TW1)",
+    "score": 8.6,
+    "weight": 12,
+    "subject": {
+      "id": 1010397,
+      "name": "Duits",
+      "abbreviation": "Du"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "F. Vermeer",
+      "abbreviation": "VMF"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-11-03T21:02:13.000Z"
+  },
+  {
+    "id": 14639009,
+    "name": "Na101",
+    "description": "cijfer periode 1 H3 Licht en lenzen1 Krachten (TW1)",
+    "score": 7.8,
+    "weight": 20,
+    "subject": {
+      "id": 1010410,
+      "name": "natuurkunde",
+      "abbreviation": "Na"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "C. de Boer",
+      "abbreviation": "BCW"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-11-03T21:17:23.000Z"
+  },
+  {
+    "id": 14639096,
+    "name": "Wi103",
+    "description": "cijfer periode 1 Hoofdstuk 22 en 23",
+    "score": 8.2,
+    "weight": 20,
+    "subject": {
+      "id": 1010417,
+      "name": "wiskunde",
+      "abbreviation": "Wi"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "A.G. Geurtz",
+      "abbreviation": "GEU"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-11-04T07:15:45.000Z"
+  },
+  {
+    "id": 14644749,
+    "name": "Ku102",
+    "description": "cijfer periode 1",
+    "score": 7,
+    "weight": 1,
+    "subject": {
+      "id": 1010405,
+      "name": "kunst",
+      "abbreviation": "Ku"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "J.H. Severs",
+      "abbreviation": "SEV"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-11-06T08:57:33.000Z"
+  },
+  {
+    "id": 14645075,
+    "name": "Gs101",
+    "description": "cijfer periode 1 Eerste Wereldoorlog",
+    "score": 7,
+    "weight": 20,
+    "subject": {
+      "id": 1010401,
+      "name": "geschiedenis",
+      "abbreviation": "Gs"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "J. Baarda",
+      "abbreviation": "BRJ"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-11-06T12:58:20.000Z"
+  },
+  {
+    "id": 14676110,
+    "name": "Ku103",
+    "description": "cijfer periode 1",
+    "score": 6,
+    "weight": 1,
+    "subject": {
+      "id": 1010405,
+      "name": "kunst",
+      "abbreviation": "Ku"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "J.H. Severs",
+      "abbreviation": "SEV"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-11-20T09:15:54.000Z"
+  },
+  {
+    "id": 14687406,
+    "name": "Du103",
+    "description": "cijfer periode 1 SO (maximaal2)",
+    "score": 8.7,
+    "weight": 3,
+    "subject": {
+      "id": 1010397,
+      "name": "Duits",
+      "abbreviation": "Du"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "F. Vermeer",
+      "abbreviation": "VMF"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-11-25T08:11:05.000Z"
+  },
+  {
+    "id": 14693603,
+    "name": "Fa101",
+    "description": "cijfer periode 1 gespreksvaardigheid",
+    "score": 8.5,
+    "weight": 5,
+    "subject": {
+      "id": 1010400,
+      "name": "Frans",
+      "abbreviation": "Fa"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "A. Ferrec",
+      "abbreviation": "VWR"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-11-26T15:40:42.000Z"
+  },
+  {
+    "id": 14712967,
+    "name": "KC105",
+    "description": "cijfer periode 1 SO Participium",
+    "score": 5.7,
+    "weight": 7,
+    "subject": {
+      "id": 1010403,
+      "name": "klassieke cultuur",
+      "abbreviation": "KC"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "M.L. Kopinga",
+      "abbreviation": "KOM"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-12-02T19:46:01.000Z"
+  },
+  {
+    "id": 14720034,
+    "name": "Ak103",
+    "description": "cijfer periode 1 SO H3",
+    "score": 7,
+    "weight": 8,
+    "subject": {
+      "id": 1010395,
+      "name": "aardrijkskunde",
+      "abbreviation": "Ak"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "P. Welling",
+      "abbreviation": "WEL"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-12-04T16:05:00.000Z"
+  },
+  {
+    "id": 14734078,
+    "name": "Ak104",
+    "description": "cijfer periode 1 Toets H3 (TW2)",
+    "score": 6,
+    "weight": 16,
+    "subject": {
+      "id": 1010395,
+      "name": "aardrijkskunde",
+      "abbreviation": "Ak"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "P. Welling",
+      "abbreviation": "WEL"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-12-11T07:02:58.000Z"
+  },
+  {
+    "id": 14743882,
+    "name": "En102 F",
+    "description": "cijfer periode 1 Bookpitch speaking (formatief)",
+    "score": 4,
+    "weight": 0,
+    "subject": {
+      "id": 1010399,
+      "name": "Engels",
+      "abbreviation": "En"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "R. Knot",
+      "abbreviation": "KNT"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-12-16T08:14:33.000Z"
+  },
+  {
+    "id": 14748413,
+    "name": "B101",
+    "description": "cijfer periode 1 Je lichaam werkt (H9) (TW2)",
+    "score": 7.8,
+    "weight": 25,
+    "subject": {
+      "id": 1010396,
+      "name": "biologie",
+      "abbreviation": "Bi"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "N. Visser",
+      "abbreviation": "MAA"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-12-17T13:00:31.000Z"
+  },
+  {
+    "id": 14750144,
+    "name": "Ne102",
+    "description": "cijfer periode 1 Leesvaardigheid H1 t/m 4 (TW2)",
+    "score": 7.2,
+    "weight": 22.5,
+    "subject": {
+      "id": 1010411,
+      "name": "Nederlands",
+      "abbreviation": "Ne"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "B. Ruhe",
+      "abbreviation": "RHB"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-12-18T10:30:11.000Z"
+  },
+  {
+    "id": 14751242,
+    "name": "Du104",
+    "description": "cijfer periode 1 Kapitel 12 en 13 (TW2)",
+    "score": 9.8,
+    "weight": 12,
+    "subject": {
+      "id": 1010397,
+      "name": "Duits",
+      "abbreviation": "Du"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "F. Vermeer",
+      "abbreviation": "VMF"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-12-18T18:58:51.000Z"
+  },
+  {
+    "id": 14751422,
+    "name": "Sk102",
+    "description": "cijfer periode 1 H1+ H2+adsorptie (Par.6.1)",
+    "score": 8.1,
+    "weight": 15,
+    "subject": {
+      "id": 1010416,
+      "name": "scheikunde",
+      "abbreviation": "Sk"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "I. Heijneman",
+      "abbreviation": "HEI"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2019-12-19T09:30:36.000Z"
+  },
+  {
+    "id": 14755697,
+    "name": "KC104",
+    "description": "cijfer periode 1 Astrix opdracht",
+    "score": 8.8,
+    "weight": 6,
+    "subject": {
+      "id": 1010403,
+      "name": "klassieke cultuur",
+      "abbreviation": "KC"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "M.L. Kopinga",
+      "abbreviation": "KOM"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-01-06T10:00:07.000Z"
+  },
+  {
+    "id": 14755727,
+    "name": "KC107",
+    "description": "cijfer periode 1 Toets kerstverhaal Gr/La (TW2)",
+    "score": 4.6,
+    "weight": 12,
+    "subject": {
+      "id": 1010403,
+      "name": "klassieke cultuur",
+      "abbreviation": "KC"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "M.L. Kopinga",
+      "abbreviation": "KOM"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-01-06T10:02:13.000Z"
+  },
+  {
+    "id": 14758988,
+    "name": "KC106",
+    "description": "cijfer periode 1 Formatieve opdracht PSOLMO",
+    "score": 9,
+    "weight": 0,
+    "subject": {
+      "id": 1010403,
+      "name": "klassieke cultuur",
+      "abbreviation": "KC"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "M.L. Kopinga",
+      "abbreviation": "KOM"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-01-09T09:10:23.000Z"
+  },
+  {
+    "id": 14759732,
+    "name": "Wi104",
+    "description": "cijfer periode 1 Hoofdstuk 26 en 30",
+    "score": 6.8,
+    "weight": 20,
+    "subject": {
+      "id": 1010417,
+      "name": "wiskunde",
+      "abbreviation": "Wi"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "A.G. Geurtz",
+      "abbreviation": "GEU"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-01-09T18:07:22.000Z"
+  },
+  {
+    "id": 14761520,
+    "name": "Lo102",
+    "description": "cijfer periode 1 inzet/werkhouding lessen",
+    "score": 9,
+    "weight": 25,
+    "subject": {
+      "id": 1010407,
+      "name": "lichamelijke opvoeding",
+      "abbreviation": "Lo"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "V. van Ekris",
+      "abbreviation": "EKV"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-01-12T11:36:34.000Z"
+  },
+  {
+    "id": 14761555,
+    "name": "Lo101",
+    "description": "cijfer periode 1 eigen vaardigheid lessen",
+    "score": 8,
+    "weight": 25,
+    "subject": {
+      "id": 1010407,
+      "name": "lichamelijke opvoeding",
+      "abbreviation": "Lo"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "V. van Ekris",
+      "abbreviation": "EKV"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-01-12T11:36:55.000Z"
+  },
+  {
+    "id": 14762814,
+    "name": "En101",
+    "description": "cijfer periode 1 SO Theme 1+2 Schoolparty-writing TW2",
+    "score": 7.2,
+    "weight": 19,
+    "subject": {
+      "id": 1010399,
+      "name": "Engels",
+      "abbreviation": "En"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "R. Knot",
+      "abbreviation": "KNT"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-01-13T08:20:12.000Z"
+  },
+  {
+    "id": 14763032,
+    "name": "Gs102",
+    "description": "cijfer periode 1 Communisme in de Sovjet Unie",
+    "score": 8.6,
+    "weight": 20,
+    "subject": {
+      "id": 1010401,
+      "name": "geschiedenis",
+      "abbreviation": "Gs"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "J. Baarda",
+      "abbreviation": "BRJ"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-01-13T09:12:02.000Z"
+  },
+  {
+    "id": 14763385,
+    "name": "Na102",
+    "description": "cijfer periode 1 H1 Krachten (TW2)",
+    "score": 9,
+    "weight": 20,
+    "subject": {
+      "id": 1010410,
+      "name": "natuurkunde",
+      "abbreviation": "Na"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "C. de Boer",
+      "abbreviation": "BCW"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-01-13T12:04:44.000Z"
+  },
+  {
+    "id": 14773502,
+    "name": "Fa104",
+    "description": "cijfer periode 1  Toets Chapitre 2",
+    "score": 8.2,
+    "weight": 5,
+    "subject": {
+      "id": 1010400,
+      "name": "Frans",
+      "abbreviation": "Fa"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "A. Ferrec",
+      "abbreviation": "VWR"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-01-17T13:27:38.000Z"
+  },
+  {
+    "id": 14814281,
+    "name": "Fa103",
+    "description": "cijfer periode 1 Leesvaardigheid",
+    "score": 9.3,
+    "weight": 10,
+    "subject": {
+      "id": 1010400,
+      "name": "Frans",
+      "abbreviation": "Fa"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "A. Ferrec",
+      "abbreviation": "VWR"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-01-31T12:00:09.000Z"
+  },
+  {
+    "id": 14829771,
+    "name": "Du301",
+    "description": "cijfer periode 2 SO (maximaal 2)",
+    "score": 7.6,
+    "weight": 3,
+    "subject": {
+      "id": 1010397,
+      "name": "Duits",
+      "abbreviation": "Du"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "F. Vermeer",
+      "abbreviation": "VMF"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-02-05T14:07:39.000Z"
+  },
+  {
+    "id": 14850257,
+    "name": "Fa305",
+    "description": "cijfer periode 2 MVT",
+    "score": 6,
+    "weight": 5,
+    "subject": {
+      "id": 1010400,
+      "name": "Frans",
+      "abbreviation": "Fa"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "R.P. Verwaal",
+      "abbreviation": "VWR"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-02-19T20:00:25.000Z"
+  },
+  {
+    "id": 14861295,
+    "name": "Ne103",
+    "description": "cijfer periode 1 Schrijfopdracht",
+    "score": 9,
+    "weight": 10,
+    "subject": {
+      "id": 1010411,
+      "name": "Nederlands",
+      "abbreviation": "Ne"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "M. van Putten",
+      "abbreviation": "RHB"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-03-05T15:52:50.000Z"
+  },
+  {
+    "id": 14874093,
+    "name": "Du302",
+    "description": "cijfer periode 2 Kapitel 14 en 15 (TW3)",
+    "score": 9.1,
+    "weight": 12,
+    "subject": {
+      "id": 1010397,
+      "name": "Duits",
+      "abbreviation": "Du"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "F. Vermeer",
+      "abbreviation": "VMF"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-03-12T18:12:17.000Z"
+  },
+  {
+    "id": 14874803,
+    "name": "Bi301",
+    "description": "cijfer periode 2 Gezondheid (H10) (TW3)",
+    "score": 5.7,
+    "weight": 25,
+    "subject": {
+      "id": 1010396,
+      "name": "biologie",
+      "abbreviation": "Bi"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "N. Visser",
+      "abbreviation": "MAA"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-03-13T11:30:12.000Z"
+  },
+  {
+    "id": 14876498,
+    "name": "Wi301",
+    "description": "cijfer periode 2 Hoofdstuk 27 + 28 (TW3)",
+    "score": 6.5,
+    "weight": 20,
+    "subject": {
+      "id": 1010417,
+      "name": "wiskunde",
+      "abbreviation": "Wi"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "A.G. Geurtz",
+      "abbreviation": "GEU"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-03-16T11:32:45.000Z"
+  },
+  {
+    "id": 14878636,
+    "name": "KC301",
+    "description": "cijfer periode 2 Toets Grieks Argo thema 6 (TW3)",
+    "score": 6.2,
+    "weight": 12,
+    "subject": {
+      "id": 1010403,
+      "name": "klassieke cultuur",
+      "abbreviation": "KC"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "M.L. Kopinga",
+      "abbreviation": "KOM"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-03-18T21:49:46.000Z"
+  },
+  {
+    "id": 14883542,
+    "name": "Ak301",
+    "description": "cijfer periode 2 Toets H7 (TW3)",
+    "score": 8,
+    "weight": 16,
+    "subject": {
+      "id": 1010395,
+      "name": "aardrijkskunde",
+      "abbreviation": "Ak"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "P. Welling",
+      "abbreviation": "WEL"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-03-23T08:26:43.000Z"
+  },
+  {
+    "id": 14885138,
+    "name": "Ne301",
+    "description": "cijfer periode 2 Grammatica herh. en Formuleren H1 t/m H4 (TW3)",
+    "score": 6.9,
+    "weight": 22.5,
+    "subject": {
+      "id": 1010411,
+      "name": "Nederlands",
+      "abbreviation": "Ne"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "M. van Putten",
+      "abbreviation": "RHB"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-03-24T11:17:55.000Z"
+  },
+  {
+    "id": 14897010,
+    "name": "Na301",
+    "description": "cijfer periode 2 H5 Kracht en beweging (TW3)",
+    "score": 7.2,
+    "weight": 20,
+    "subject": {
+      "id": 1010410,
+      "name": "natuurkunde",
+      "abbreviation": "Na"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "C. de Boer",
+      "abbreviation": "BCW"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-04-03T10:38:39.000Z"
+  },
+  {
+    "id": 14902371,
+    "name": "Sk301",
+    "description": "cijfer periode 2 Toets H1 t/m 4 (TW3)",
+    "score": 5.1,
+    "weight": 25,
+    "subject": {
+      "id": 1010416,
+      "name": "scheikunde",
+      "abbreviation": "Sk"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "I. Heijneman",
+      "abbreviation": "HEI"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-04-08T09:46:46.000Z"
+  },
+  {
+    "id": 14917108,
+    "name": "KC302",
+    "description": "cijfer periode 2 PO Hades",
+    "score": 6,
+    "weight": 6,
+    "subject": {
+      "id": 1010403,
+      "name": "klassieke cultuur",
+      "abbreviation": "KC"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "M.L. Kopinga",
+      "abbreviation": "KOM"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-04-14T19:29:31.000Z"
+  },
+  {
+    "id": 14921032,
+    "name": "KC303",
+    "description": "cijfer periode 2 Formatieve opdracht Martialis voorbereiding PO",
+    "score": 7,
+    "weight": 0,
+    "subject": {
+      "id": 1010403,
+      "name": "klassieke cultuur",
+      "abbreviation": "KC"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "M.L. Kopinga",
+      "abbreviation": "KOM"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-04-17T19:43:03.000Z"
+  },
+  {
+    "id": 14924499,
+    "name": "Ku302",
+    "description": "cijfer periode 2",
+    "score": 8,
+    "weight": 2,
+    "subject": {
+      "id": 1010405,
+      "name": "kunst",
+      "abbreviation": "Ku"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "J.H. Severs",
+      "abbreviation": "SEV"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-05-03T18:00:07.000Z"
+  },
+  {
+    "id": 14926150,
+    "name": "Gs301",
+    "description": "cijfer periode 2 Facisme en nationaalsocialisme",
+    "score": 6.3,
+    "weight": 20,
+    "subject": {
+      "id": 1010401,
+      "name": "geschiedenis",
+      "abbreviation": "Gs"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "J. Baarda",
+      "abbreviation": "BRJ"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-05-05T20:24:56.000Z"
+  },
+  {
+    "id": 14927752,
+    "name": "KC304",
+    "description": "cijfer periode 2 Formatieve opdracht vertaalreflectie",
+    "score": 7,
+    "weight": 0,
+    "subject": {
+      "id": 1010403,
+      "name": "klassieke cultuur",
+      "abbreviation": "KC"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "M.L. Kopinga",
+      "abbreviation": "KOM"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-05-08T10:51:22.000Z"
+  },
+  {
+    "id": 14933886,
+    "name": "Ku303",
+    "description": "cijfer periode 2",
+    "score": 6.2,
+    "weight": 5,
+    "subject": {
+      "id": 1010405,
+      "name": "kunst",
+      "abbreviation": "Ku"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "J.H. Severs",
+      "abbreviation": "SEV"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-05-15T09:56:23.000Z"
+  },
+  {
+    "id": 14934892,
+    "name": "Ak302",
+    "description": "cijfer periode 2 Toets H6 (TW4)",
+    "score": 7,
+    "weight": 16,
+    "subject": {
+      "id": 1010395,
+      "name": "aardrijkskunde",
+      "abbreviation": "Ak"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "P. Welling",
+      "abbreviation": "WEL"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-05-17T10:05:18.000Z"
+  },
+  {
+    "id": 14936406,
+    "name": "Fa302",
+    "description": "cijfer periode 2 Toets Chapitre 5",
+    "score": 7.3,
+    "weight": 15,
+    "subject": {
+      "id": 1010400,
+      "name": "Frans",
+      "abbreviation": "Fa"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "A. Ferrec",
+      "abbreviation": "VWR"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-05-18T13:06:45.000Z"
+  },
+  {
+    "id": 14936469,
+    "name": "Fa105",
+    "description": "cijfer periode 1 Luistervaardigheid",
+    "score": 9.3,
+    "weight": 15,
+    "subject": {
+      "id": 1010400,
+      "name": "Frans",
+      "abbreviation": "Fa"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "A. Ferrec",
+      "abbreviation": "VWR"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-05-18T13:15:02.000Z"
+  },
+  {
+    "id": 14938171,
+    "name": "Du304",
+    "description": "cijfer periode 2 Leestoets (TW4)",
+    "score": 8,
+    "weight": 14,
+    "subject": {
+      "id": 1010397,
+      "name": "Duits",
+      "abbreviation": "Du"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "F. Vermeer",
+      "abbreviation": "VMF"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-05-19T10:50:13.000Z"
+  },
+  {
+    "id": 14942123,
+    "name": "Sk303",
+    "description": "cijfer periode 2 H5, H8+par.7.3+adsorptie (TW4)",
+    "score": 8.1,
+    "weight": 25,
+    "subject": {
+      "id": 1010416,
+      "name": "scheikunde",
+      "abbreviation": "Sk"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "I. Heijneman",
+      "abbreviation": "HEI"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-05-25T06:43:13.000Z"
+  },
+  {
+    "id": 14942981,
+    "name": "Wi302",
+    "description": "cijfer periode 2 Toets Hfst. 24+25 (TW4)",
+    "score": 7.2,
+    "weight": 20,
+    "subject": {
+      "id": 1010417,
+      "name": "wiskunde",
+      "abbreviation": "Wi"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "A.G. Geurtz",
+      "abbreviation": "GEU"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-05-25T10:53:31.000Z"
+  },
+  {
+    "id": 14947370,
+    "name": "Ne302",
+    "description": "cijfer periode 2 Leesvaardigheid H1 t/m H6 (TW4)",
+    "score": 8.5,
+    "weight": 22.5,
+    "subject": {
+      "id": 1010411,
+      "name": "Nederlands",
+      "abbreviation": "Ne"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "M. van Putten",
+      "abbreviation": "RHB"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-05-27T14:00:44.000Z"
+  },
+  {
+    "id": 14949183,
+    "name": "Du306",
+    "description": "cijfer periode 2 PO Mondeling",
+    "score": 7.3,
+    "weight": 8,
+    "subject": {
+      "id": 1010397,
+      "name": "Duits",
+      "abbreviation": "Du"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "F. Vermeer",
+      "abbreviation": "VMF"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-05-28T14:42:21.000Z"
+  },
+  {
+    "id": 14953874,
+    "name": "Na302",
+    "description": "cijfer periode 2 H2 en 6 Elektriciteit (TW4)",
+    "score": 8.5,
+    "weight": 18,
+    "subject": {
+      "id": 1010410,
+      "name": "natuurkunde",
+      "abbreviation": "Na"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "C. de Boer",
+      "abbreviation": "BCW"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-05-29T14:42:33.000Z"
+  },
+  {
+    "id": 14954192,
+    "name": "KC306",
+    "description": "cijfer periode 2 PO Martialis",
+    "score": 7.5,
+    "weight": 6,
+    "subject": {
+      "id": 1010403,
+      "name": "klassieke cultuur",
+      "abbreviation": "KC"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "M.L. Kopinga",
+      "abbreviation": "KOM"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-05-31T08:55:02.000Z"
+  },
+  {
+    "id": 14960590,
+    "name": "Fa106",
+    "description": "cijfer periode 1 Toets Chapitre 3",
+    "score": 8.2,
+    "weight": 10,
+    "subject": {
+      "id": 1010400,
+      "name": "Frans",
+      "abbreviation": "Fa"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "A. Ferrec",
+      "abbreviation": "VWR"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-06-05T15:10:20.000Z"
+  },
+  {
+    "id": 14962579,
+    "name": "KC305",
+    "description": "cijfer periode 2 Vertaaltoets Gr/La (TW4)",
+    "score": 7,
+    "weight": 12,
+    "subject": {
+      "id": 1010403,
+      "name": "klassieke cultuur",
+      "abbreviation": "KC"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "M.L. Kopinga",
+      "abbreviation": "KOM"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-06-08T19:47:52.000Z"
+  },
+  {
+    "id": 14967268,
+    "name": "Bi302",
+    "description": "cijfer periode 2 Project duurzaamheid",
+    "score": 8,
+    "weight": 25,
+    "subject": {
+      "id": 1010396,
+      "name": "biologie",
+      "abbreviation": "Bi"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "N. Visser",
+      "abbreviation": "MAA"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-06-14T06:43:13.000Z"
+  },
+  {
+    "id": 14970848,
+    "name": "Du308",
+    "description": "cijfer periode 2 PO project",
+    "score": 8,
+    "weight": 3,
+    "subject": {
+      "id": 1010397,
+      "name": "Duits",
+      "abbreviation": "Du"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "F. Vermeer",
+      "abbreviation": "VMF"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-06-16T14:01:52.000Z"
+  },
+  {
+    "id": 14975099,
+    "name": "Ku304",
+    "description": "cijfer periode 2",
+    "score": 7.4,
+    "weight": 4,
+    "subject": {
+      "id": 1010405,
+      "name": "kunst",
+      "abbreviation": "Ku"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "J.H. Severs",
+      "abbreviation": "SEV"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-06-20T10:39:46.000Z"
+  },
+  {
+    "id": 14976967,
+    "name": "En105",
+    "description": "cijfer periode 1 Luistervaardigheid",
+    "score": 8.6,
+    "weight": 19,
+    "subject": {
+      "id": 1010399,
+      "name": "Engels",
+      "abbreviation": "En"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "J. Visser",
+      "abbreviation": "KNT"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-06-22T08:33:43.000Z"
+  },
+  {
+    "id": 14980506,
+    "name": "Du303",
+    "description": "cijfer periode 2 PO project",
+    "score": 7,
+    "weight": 3,
+    "subject": {
+      "id": 1010397,
+      "name": "Duits",
+      "abbreviation": "Du"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "F. Vermeer",
+      "abbreviation": "VMF"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-06-23T13:00:49.000Z"
+  },
+  {
+    "id": 14983618,
+    "name": "Bi303",
+    "description": "cijfer periode 2 Seksualiteit en voortplanting (H8+12+LLDL) (TW5)",
+    "score": 7.6,
+    "weight": 25,
+    "subject": {
+      "id": 1010396,
+      "name": "biologie",
+      "abbreviation": "Bi"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "N. Visser",
+      "abbreviation": "MAA"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-06-25T11:44:45.000Z"
+  },
+  {
+    "id": 14987548,
+    "name": "Lo302",
+    "description": "cijfer periode 2 inzet werkhouding lessen",
+    "score": 7.5,
+    "weight": 25,
+    "subject": {
+      "id": 1010407,
+      "name": "lichamelijke opvoeding",
+      "abbreviation": "Lo"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "V. van Ekris",
+      "abbreviation": "EKV"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-06-28T09:10:55.000Z"
+  },
+  {
+    "id": 14990789,
+    "name": "En303",
+    "description": "cijfer periode 2 Leesvaardigheid  HAVO/GT TW5",
+    "score": 8.5,
+    "weight": 39,
+    "subject": {
+      "id": 1010399,
+      "name": "Engels",
+      "abbreviation": "En"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "J. Visser",
+      "abbreviation": "KNT"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-06-29T13:14:06.000Z"
+  },
+  {
+    "id": 14992602,
+    "name": "Du307",
+    "description": "cijfer periode 2 Schrijftoets en grammatica (TW5)",
+    "score": 8.3,
+    "weight": 12,
+    "subject": {
+      "id": 1010397,
+      "name": "Duits",
+      "abbreviation": "Du"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "F. Vermeer",
+      "abbreviation": "VMF"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-06-30T07:44:52.000Z"
+  },
+  {
+    "id": 14997365,
+    "name": "Sk305",
+    "description": "cijfer periode 2 H1 t/m H8 (TW5)",
+    "score": 9.6,
+    "weight": 35,
+    "subject": {
+      "id": 1010416,
+      "name": "scheikunde",
+      "abbreviation": "Sk"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "I. Heijneman",
+      "abbreviation": "HEI"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-06-30T12:39:44.000Z"
+  },
+  {
+    "id": 14999772,
+    "name": "Wi303",
+    "description": "cijfer periode 2 Hoofdstuk 29 + kansen (TW5)",
+    "score": 6.3,
+    "weight": 20,
+    "subject": {
+      "id": 1010417,
+      "name": "wiskunde",
+      "abbreviation": "Wi"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "A.G. Geurtz",
+      "abbreviation": "GEU"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-06-30T15:45:11.000Z"
+  },
+  {
+    "id": 15000802,
+    "name": "Ne303",
+    "description": "cijfer periode 2 Grammatica H1 t/m H6 (TW5)",
+    "score": 5.8,
+    "weight": 22.5,
+    "subject": {
+      "id": 1010411,
+      "name": "Nederlands",
+      "abbreviation": "Ne"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "M. van Putten",
+      "abbreviation": "RHB"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-06-30T18:44:48.000Z"
+  },
+  {
+    "id": 15001079,
+    "name": "Du105",
+    "description": "cijfer periode 1 PO project",
+    "score": 8.5,
+    "weight": 5,
+    "subject": {
+      "id": 1010397,
+      "name": "Duits",
+      "abbreviation": "Du"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "F. Vermeer",
+      "abbreviation": "VMF"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-06-30T19:27:16.000Z"
+  },
+  {
+    "id": 15001080,
+    "name": "Du305",
+    "description": "cijfer periode 2 PO Luistertoets",
+    "score": 8.5,
+    "weight": 10,
+    "subject": {
+      "id": 1010397,
+      "name": "Duits",
+      "abbreviation": "Du"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "F. Vermeer",
+      "abbreviation": "VMF"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-06-30T19:27:18.000Z"
+  },
+  {
+    "id": 15004421,
+    "name": "Na303",
+    "description": "cijfer periode 2 H7 Radioactiviteit (TW5)",
+    "score": 8.1,
+    "weight": 20,
+    "subject": {
+      "id": 1010410,
+      "name": "natuurkunde",
+      "abbreviation": "Na"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "C. de Boer",
+      "abbreviation": "BCW"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-07-01T09:47:12.000Z"
+  },
+  {
+    "id": 15004604,
+    "name": "KC307",
+    "description": "cijfer periode 2 Toets keuze Grieks thema 9/Latijn Caesar (TW5)",
+    "score": 7,
+    "weight": 13,
+    "subject": {
+      "id": 1010403,
+      "name": "klassieke cultuur",
+      "abbreviation": "KC"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "M.L. Kopinga",
+      "abbreviation": "KOM"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-07-01T09:53:27.000Z"
+  },
+  {
+    "id": 15006165,
+    "name": "Fa303",
+    "description": "cijfer periode 2 Leesvaardigheid",
+    "score": 5.9,
+    "weight": 15,
+    "subject": {
+      "id": 1010400,
+      "name": "Frans",
+      "abbreviation": "Fa"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "A. Ferrec",
+      "abbreviation": "VWR"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-07-01T11:31:41.000Z"
+  },
+  {
+    "id": 15006639,
+    "name": "Gs303",
+    "description": "cijfer periode 2 PO over 1945-heden",
+    "score": 7.1,
+    "weight": 20,
+    "subject": {
+      "id": 1010401,
+      "name": "geschiedenis",
+      "abbreviation": "Gs"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "J. Baarda",
+      "abbreviation": "BRJ"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-07-01T11:56:19.000Z"
+  },
+  {
+    "id": 15006981,
+    "name": "Ak303",
+    "description": "cijfer periode 2 Project WV",
+    "score": 7,
+    "weight": 20,
+    "subject": {
+      "id": 1010395,
+      "name": "aardrijkskunde",
+      "abbreviation": "Ak"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "P. Welling",
+      "abbreviation": "WEL"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-07-01T12:10:56.000Z"
+  },
+  {
+    "id": 15007253,
+    "name": "Gs302",
+    "description": "cijfer periode 2 Tweede Wereldoorlog",
+    "score": 7.3,
+    "weight": 20,
+    "subject": {
+      "id": 1010401,
+      "name": "geschiedenis",
+      "abbreviation": "Gs"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "J. Baarda",
+      "abbreviation": "BRJ"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-07-01T12:18:13.000Z"
+  },
+  {
+    "id": 15008303,
+    "name": "Lo301",
+    "description": "cijfer periode 2 eigen vaardigheid lessen",
+    "score": 8,
+    "weight": 25,
+    "subject": {
+      "id": 1010407,
+      "name": "lichamelijke opvoeding",
+      "abbreviation": "Lo"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "V. van Ekris",
+      "abbreviation": "EKV"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-07-01T13:39:44.000Z"
+  },
+  {
+    "id": 15009700,
+    "name": "Fa304",
+    "description": "cijfer periode 2 Toets Chapitre 6",
+    "score": 6.5,
+    "weight": 15,
+    "subject": {
+      "id": 1010400,
+      "name": "Frans",
+      "abbreviation": "Fa"
+    },
+    "type": "Toets",
+    "teacher": {
+      "name": "A. Ferrec",
+      "abbreviation": "VWR"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-07-02T00:03:47.000Z"
+  },
+  {
+    "id": 15011713,
+    "name": "En304",
+    "description": "cijfer periode 2 MVT",
+    "score": 9,
+    "weight": 4,
+    "subject": {
+      "id": 1010399,
+      "name": "Engels",
+      "abbreviation": "En"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "S. Burgers",
+      "abbreviation": "KNT"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-07-02T12:15:47.000Z"
+  },
+  {
+    "id": 15013698,
+    "name": "En301",
+    "description": "cijfer periode 2 SO Theme 5 Storytelling-speaking",
+    "score": 6.8,
+    "weight": 19,
+    "subject": {
+      "id": 1010399,
+      "name": "Engels",
+      "abbreviation": "En"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "J. Visser",
+      "abbreviation": "KNT"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-07-03T09:40:33.000Z"
+  },
+  {
+    "id": 15034011,
+    "name": "Fa301",
+    "description": "cijfer periode 2 Gespreksvaardigheid",
+    "score": 8.5,
+    "weight": 5,
+    "subject": {
+      "id": 1010400,
+      "name": "Frans",
+      "abbreviation": "Fa"
+    },
+    "type": "PO",
+    "teacher": {
+      "name": "A. Ferrec",
+      "abbreviation": "VWR"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-07-08T14:51:53.000Z"
+  },
+  {
+    "id": 14644750,
+    "name": "Ku101",
+    "description": "cijfer periode 1",
+    "score": 6.5,
+    "weight": 45,
+    "subject": {
+      "id": 1010405,
+      "name": "kunst",
+      "abbreviation": "Ku"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "S.G. Derijks",
+      "abbreviation": "SEV"
+    },
+    "period": {
+      "id": 10316,
+      "name": "P1"
+    },
+    "date": "2020-07-09T07:07:08.000Z"
+  },
+  {
+    "id": 14924500,
+    "name": "Ku301",
+    "description": "cijfer periode 2",
+    "score": 7,
+    "weight": 55,
+    "subject": {
+      "id": 1010405,
+      "name": "kunst",
+      "abbreviation": "Ku"
+    },
+    "type": "SO",
+    "teacher": {
+      "name": "S.G. Derijks",
+      "abbreviation": "SEV"
+    },
+    "period": {
+      "id": 10318,
+      "name": "P2"
+    },
+    "date": "2020-07-09T07:07:08.000Z"
+  }
+]

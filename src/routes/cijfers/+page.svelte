@@ -11,7 +11,7 @@
 	import type { LayoutServerData } from '../$types';
 	export let data: LayoutServerData;
 
-	let grades = data.grades;
+	$: grades = data.grades;
 	let fetching: boolean = false;
 
 	addFetchedGrades({
@@ -60,6 +60,6 @@
 	<Fetching schoolYearName={data.schoolYears[$schoolYearIndex].study.name} />
 {:else if $fetchFailed.includes($schoolYearIndex)}
 	<FetchError schoolYearName={data.schoolYears[$schoolYearIndex].study.name} retry={fetchGrades} />
-{:else}
+{:else if grades}
 	<GradesTable {grades} />
 {/if}

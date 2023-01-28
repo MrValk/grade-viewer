@@ -1,6 +1,7 @@
 import type Magister from 'magister-scraper';
 import type { Grade, MagisterGrade, MagisterGradeInfo } from '$models/grade';
 import type { SchoolYear } from '$models/schoolYear';
+import fs from 'fs';
 
 export default async function getGrades(
 	client: Magister,
@@ -21,6 +22,8 @@ export default async function getGrades(
 			/\d/.test(item.CijferStr) &&
 			item.CijferPeriode &&
 			item.CijferKolom.KolomKop !== 'VT' &&
+			item.CijferKolom.KolomKop !== 'Rp' &&
+			item.CijferKolom.KolomKop !== 'SE' &&
 			item.CijferPeriode.Naam !== 'PTA' &&
 			item.CijferPeriode.Naam !== 'Eind'
 	);
@@ -32,7 +35,7 @@ export default async function getGrades(
 	});
 
 	// Format the data to fit the Grade type and return it
-	return await Promise.all(
+	const formatted = await Promise.all(
 		filtered.map(async (grade: MagisterGrade): Promise<Grade> => {
 			// Call the Magister API to get specific information on every grade
 			const response: MagisterGradeInfo = await client.get(
@@ -64,5 +67,11 @@ export default async function getGrades(
 				date: new Date(grade.DatumIngevoerd)
 			};
 		})
+	);
+
+	fs.writeFileSync('grades.json', JSON.stringify(formatted, null, 2));
+
+	return formatted.filter(
+		(grade: Grade) => grade.weight !== 0 && !grade.description.includes('overgangscijfer op')
 	);
 }

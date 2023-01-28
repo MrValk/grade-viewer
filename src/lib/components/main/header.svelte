@@ -5,8 +5,8 @@
 	export let name: string;
 </script>
 
-<header class="flex items-center w-11/12 justify-center h-20 border-b border-gray-600">
-	<a class="text-4xl w-full font-bold hover:text-gray-300 transition" href="/"
+<header class="flex items-center w-11/12 justify-between h-20 border-b border-gray-600">
+	<a class="text-4xl w-fit font-bold hover:text-gray-300 transition" href="/"
 		><h1>Magister Clone</h1></a
 	>
 	<nav class="flex items-center justify-between gap-12 text-xl">
