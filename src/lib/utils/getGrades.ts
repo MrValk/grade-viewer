@@ -1,7 +1,6 @@
 import type Magister from 'magister-scraper';
 import type { Grade, MagisterGrade, MagisterGradeInfo } from '$models/grade';
 import type { SchoolYear } from '$models/schoolYear';
-import fs from 'fs';
 
 export default async function getGrades(
 	client: Magister,
@@ -27,12 +26,6 @@ export default async function getGrades(
 			item.CijferPeriode.Naam !== 'PTA' &&
 			item.CijferPeriode.Naam !== 'Eind'
 	);
-	// Sort by date
-	filtered.sort((a: MagisterGrade, b: MagisterGrade) => {
-		const dateA = new Date(a.DatumIngevoerd);
-		const dateB = new Date(b.DatumIngevoerd);
-		return dateA.getTime() - dateB.getTime();
-	});
 
 	// Format the data to fit the Grade type and return it
 	const formatted = await Promise.all(
@@ -55,7 +48,7 @@ export default async function getGrades(
 					name: grade.Vak.Omschrijving,
 					abbreviation: grade.Vak.Afkorting
 				},
-				type: grade.CijferKolom.KolomKop,
+				type: grade.CijferKolom.KolomKop === 'PTA toets' ? 'PTA' : 'OV',
 				teacher: {
 					name: grade.IngevoerdDoor ? grade.IngevoerdDoor.replace('  ', ' ') : null,
 					abbreviation: grade.Docent
@@ -69,9 +62,14 @@ export default async function getGrades(
 		})
 	);
 
-	fs.writeFileSync('grades.json', JSON.stringify(formatted, null, 2));
-
-	return formatted.filter(
+	const filtered2 = formatted.filter(
 		(grade: Grade) => grade.weight !== 0 && !grade.description.includes('overgangscijfer op')
 	);
+
+	filtered2.sort(
+		(a: Grade, b: Grade) =>
+			parseInt(a.name.replace(/\D/g, '')) - parseInt(b.name.replace(/\D/g, ''))
+	);
+
+	return filtered2;
 }
