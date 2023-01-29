@@ -12,7 +12,7 @@
 </svelte:head>
 <div class="flex flex-col items-center w-full h-full min-h-screen bg-zinc-800 text-white">
 	<Header photo={data.photo} name={data.name} />
-	<main class="w-11/12 pt-6">
+	<main class="w-11/12 py-6">
 		<slot />
 	</main>
 </div>

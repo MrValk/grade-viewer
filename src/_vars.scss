@@ -1,1 +1,13 @@
-$cellWidth: 4rem;
+$cellWidth: 3.75rem;
+
+.w-cell {
+	width: $cellWidth;
+}
+
+.w-2cell {
+	width: calc(2 * $cellWidth);
+}
+
+.h-cell {
+	height: $cellWidth;
+}
