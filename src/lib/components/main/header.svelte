@@ -10,31 +10,17 @@
 		><h1>Magister Cijfers</h1></a
 	>
 	<nav class="flex items-center justify-between gap-12 text-xl">
-		<a class="relative flex flex-col hover:text-gray-300 transition" href="/agenda"
-			>Agenda<span
-				class={`absolute bottom-0 rounded-full bg-white ${
-					$page.route.id === '/agenda' ? 'w-full' : 'w-0'
-				}`}
-			/></a
-		>
-		<a class="relative flex flex-col hover:text-gray-300 transition" href="/cijfers"
+		<a class="relative flex flex-col hover:text-gray-300 transition" href="/"
 			>Cijfers<span
 				class={`absolute bottom-0 rounded-full bg-white ${
-					$page.route.id === '/cijfers' ? 'w-full' : 'w-0'
+					$page.route.id === '/' ? 'w-full' : 'w-0'
 				}`}
 			/></a
 		>
-		<a class="relative flex flex-col hover:text-gray-300 transition" href="/absenties"
-			>Absenties<span
+		<a class="relative flex flex-col hover:text-gray-300 transition" href="/woordrapporten"
+			>Woordrapporten<span
 				class={`absolute bottom-0 rounded-full bg-white ${
-					$page.route.id === '/absenties' ? 'w-full' : 'w-0'
-				}`}
-			/></a
-		>
-		<a class="relative flex flex-col hover:text-gray-300 transition" href="/berichten"
-			>Berichten<span
-				class={`absolute bottom-0 rounded-full bg-white ${
-					$page.route.id === '/berichten' ? 'w-full' : 'w-0'
+					$page.route.id === '/woordrapporten' ? 'w-full' : 'w-0'
 				}`}
 			/></a
 		>
