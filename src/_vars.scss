@@ -11,3 +11,7 @@ $cellWidth: 3.75rem;
 .h-cell {
 	height: $cellWidth;
 }
+
+.h-2cell {
+	height: calc(2 * $cellWidth);
+}

@@ -19,7 +19,7 @@
 	}
 </script>
 
-<table class="text-lg border-hidden rounded-md shadow-zinc-900 shadow-xl bg-zinc-500/70">
+<table class="text-lg w-fit border-hidden rounded-md shadow-zinc-900 shadow-xl bg-zinc-500/70">
 	<thead class="h-10">
 		<th class="bg-zinc-700 rounded-tl-md">Vak</th>
 		<th class="bg-zinc-700" colspan={mostGrades}>Cijfers & Wegingen</th>
@@ -118,6 +118,10 @@
 
 <style lang="scss">
 	@use 'src/_vars.scss' as *;
+
+	table {
+		flex: 0 0 auto;
+	}
 
 	.last-grade-row td:first-child {
 		border-bottom-left-radius: 0.375rem;
