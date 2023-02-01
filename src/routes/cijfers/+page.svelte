@@ -2,6 +2,7 @@
 	import GradesTable from '$components/cijfers/GradesTable.svelte';
 	import TotalAverage from '$components/cijfers/TotalAverage.svelte';
 	import GradeInfo from '$components/cijfers/GradeInfo.svelte';
+	import CumLaude from '$components/cijfers/CumLaude.svelte';
 	import Placeholder from '$components/cijfers/Placeholder.svelte';
 	import FetchError from '$components/cijfers/FetchError.svelte';
 	import Fetching from '$components/cijfers/Fetching.svelte';
@@ -74,7 +75,7 @@
 		<section class="flex flex-col w-fit gap-6">
 			<GradesTable {grades} />
 			<div class="flex justify-between h-cell gap-6 flex-grow">
-				<Placeholder />
+				<CumLaude />
 				<TotalAverage />
 			</div>
 		</section>

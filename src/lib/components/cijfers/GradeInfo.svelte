@@ -30,10 +30,7 @@
 		},
 		{
 			tag: 'Weging',
-			value: $selectedGrade?.weight.toLocaleString(undefined, {
-				maximumFractionDigits: 1,
-				minimumFractionDigits: 1
-			})
+			value: $selectedGrade?.weight.toLocaleString()
 		},
 		{
 			tag: 'Docent',
