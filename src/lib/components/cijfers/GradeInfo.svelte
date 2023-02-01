@@ -52,7 +52,7 @@
 
 	onMount(() => {
 		observer = new ResizeObserver(() => {
-			if (infoEl) infoWidth = infoEl.clientWidth;
+			if (infoEl) infoWidth = infoEl.offsetWidth;
 		});
 	});
 
@@ -88,7 +88,7 @@
 			</thead>
 			<colgroup>
 				<col class="w-36" />
-				<col class="right-col" />
+				<col class="break-word" />
 			</colgroup>
 			<tbody>
 				{#each gradeData as data}
@@ -111,17 +111,13 @@
 		</table>
 	{:else}
 		<div class="w-full h-full flex items-center justify-center" bind:this={infoEl}>
-			<h4 class="text-2xl text-center">Klik op een cijfer voor meer informatie</h4>
+			<h4 class="text-xl text-center font-semibold">Klik op een cijfer voor meer informatie</h4>
 		</div>
 	{/if}
 </article>
 
 <style lang="scss">
 	@use 'src/_vars.scss' as *;
-
-	.right-col {
-		word-break: break-word;
-	}
 
 	.min-w-36 {
 		min-width: 9rem;

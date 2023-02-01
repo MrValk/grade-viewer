@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: 'Satoshi-Medium', 'Poppins', sans-serif;
+
+	/* width */
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: #383535;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: rgb(35, 34, 34);
+	}
+
+	/* Handle on hover */
+	&::-webkit-scrollbar-thumb:hover {
+		background: rgb(32, 31, 31);
+	}
+}
