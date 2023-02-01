@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { selectedGrade } from '$stores/selectedGrade';
+	import { selectedSubject } from '$stores/selectedSubject';
 
 	import { onMount } from 'svelte';
 
@@ -39,7 +40,7 @@
 </script>
 
 <article class="text-lg h-full bg-zinc-500/70 rounded-md overflow-hidden shadow-xl">
-	{#if $selectedGrade}
+	{#if $selectedGrade || $selectedSubject}
 		<section class="w-full" use:showInfo><slot /></section>
 	{:else}
 		<div class="h-full flex items-center justify-center" bind:this={infoEl}>

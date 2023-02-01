@@ -3,17 +3,25 @@
 	import { getGradeTypes } from '$utils/getGradeTypes';
 
 	import type { Grade } from '$models/grade';
+	import type { Subject } from '$models/subject';
 
 	import { subjectsGrades, setSubjectsGrades } from '$stores/subjectsGrades';
 	import { gradeTypes, setGradeTypes } from '$stores/gradeTypes';
-	import { selectedGrade, setSelectedGrade } from '$stores/selectedGrade';
+
+	import { selectedGrade, setSelectedGrade, resetSelectedGrade } from '$stores/selectedGrade';
+	import {
+		selectedSubject,
+		setSelectedSubject,
+		resetSelectedSubject
+	} from '$src/lib/stores/selectedSubject';
 
 	export let grades: Grade[];
+	export let subjects: Subject[];
 
 	let mostGrades: number = 0;
 
 	$: {
-		setSubjectsGrades(getSubjectsGrades(grades));
+		setSubjectsGrades(getSubjectsGrades(grades, subjects));
 		setGradeTypes(getGradeTypes(grades));
 		mostGrades = Math.max(...$subjectsGrades.map((subjectGrades) => subjectGrades.grades.length));
 	}
@@ -45,7 +53,18 @@
 	<tbody>
 		{#each $subjectsGrades as subjectGrades, i}
 			<tr class={`h-cell ${$subjectsGrades.length === i + 1 ? 'last-grade-row' : ''}`}>
-				<td class="bg-zinc-600"><h4 class="pl-6">{subjectGrades.subject}</h4></td>
+				<td
+					class={$selectedSubject && $selectedSubject.id === subjectGrades.subject.id
+						? '!bg-zinc-700/50 font-bold'
+						: 'bg-zinc-600'}
+					><button
+						class="w-48 h-cell outline-none"
+						on:click={() => {
+							setSelectedSubject(subjectGrades.subject);
+							resetSelectedGrade();
+						}}><h4 class="pl-6 text-left">{subjectGrades.subject.abbreviation}</h4></button
+					></td
+				>
 				{#each Array(mostGrades) as _, i}
 					{#if subjectGrades.grades[i]}
 						<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -59,8 +78,11 @@
 							} transition`}
 						>
 							<button
-								class="flex flex-col justify-center items-center w-cell h-cell"
-								on:click={() => setSelectedGrade(subjectGrades.grades[i])}
+								class="flex flex-col justify-center items-center w-cell h-cell outline-none"
+								on:click={() => {
+									setSelectedGrade(subjectGrades.grades[i]);
+									resetSelectedSubject();
+								}}
 							>
 								<p>
 									{subjectGrades.grades[i].score.toLocaleString(undefined, {

@@ -2,14 +2,17 @@ import type { Average } from '$models/average';
 import type { Grade } from '$models/grade';
 import type { SubjectGrades } from '$models/subjectGrades';
 import { calcAverage } from '$utils/calcAverage';
-import { getSubjects } from '$src/lib/utils/getSubjects';
+import { getSubjectIds } from '$src/lib/utils/getSubjectIds';
+import type { Subject } from '../models/subject';
 
-export function getSubjectsGrades(grades: Grade[]): SubjectGrades[] {
-	const subjects = getSubjects(grades).sort();
+export function getSubjectsGrades(grades: Grade[], subjects: Subject[]): SubjectGrades[] {
+	const subjectIds = getSubjectIds(grades);
+	const filteredSubjects = subjects.filter((subject) => subjectIds.includes(subject.id));
+
 	let subjectGradesArr: SubjectGrades[] = [];
 
-	subjects.forEach((subject) => {
-		const subjectGrades = grades.filter((grade) => grade.subject.abbreviation === subject);
+	filteredSubjects.forEach((subject) => {
+		const subjectGrades = grades.filter((grade) => grade.subject.id === subject.id);
 		const PTAGrades = subjectGrades.filter((grade) => grade.type === 'PTA');
 		const OVGrades = subjectGrades;
 

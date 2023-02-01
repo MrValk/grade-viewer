@@ -1,7 +1,8 @@
 import type { Grade } from '$models/grade';
+import type { Subject } from '$models/subject';
 
 export type SubjectGrades = {
-	subject: string;
+	subject: Subject;
 	grades: Grade[];
 	OV: {
 		grade: number;

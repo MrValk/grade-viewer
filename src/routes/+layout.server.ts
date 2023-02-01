@@ -1,6 +1,7 @@
 import type { SchoolYear } from '$models/schoolYear';
 import { defaultSchoolYearIndex } from '$src/hooks.server';
 import type { Grade } from '$src/lib/models/grade';
+import type { Subject } from '$src/lib/models/subject';
 import type { LayoutServerLoad } from './$types';
 
 export const load: LayoutServerLoad = async ({ fetch }) => {
@@ -11,6 +12,11 @@ export const load: LayoutServerLoad = async ({ fetch }) => {
 
 	async function fetchGrades(): Promise<Grade[]> {
 		const res = await fetch(`/api/grades/${defaultSchoolYearIndex}`);
+		return await res.json();
+	}
+
+	async function fetchSubjects(): Promise<Subject[]> {
+		const res = await fetch(`/api/subjects/${defaultSchoolYearIndex}`);
 		return await res.json();
 	}
 
@@ -25,8 +31,9 @@ export const load: LayoutServerLoad = async ({ fetch }) => {
 	}
 
 	return {
-		grades: await fetchGrades(),
 		schoolYears: await fetchSchoolYears(),
+		grades: await fetchGrades(),
+		subjects: await fetchSubjects(),
 		photo: await fetchPhoto(),
 		name: await fetchName()
 	};

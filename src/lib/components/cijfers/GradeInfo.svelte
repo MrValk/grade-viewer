@@ -44,7 +44,7 @@
 
 <table class="text-lg border-hidden w-full">
 	<thead class="h-10">
-		<th colspan="2" class="bg-zinc-700 rounded-t-md">Cijferinfo</th>
+		<th colspan="2" class="bg-zinc-700 rounded-t-md">Cijfer Info</th>
 	</thead>
 	<colgroup>
 		<col class="w-36" />
@@ -72,8 +72,4 @@
 
 <style lang="scss">
 	@use 'src/_vars.scss' as *;
-
-	.min-w-36 {
-		min-width: 9rem;
-	}
 </style>

@@ -1,5 +1,5 @@
 import { writable, get } from 'svelte/store';
-import type { FetchedGrades } from '../models/fetchedGrades';
+import type { FetchedGrades } from '$models/fetchedGrades';
 
 export const fetchedGrades = writable<FetchedGrades[]>([]);
 
