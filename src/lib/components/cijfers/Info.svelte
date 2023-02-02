@@ -13,6 +13,10 @@
 		observer = new ResizeObserver(() => {
 			if (infoEl) infoWidth = infoEl.offsetWidth;
 		});
+
+		window.onresize = () => {
+			if (infoEl) infoWidth = infoEl.offsetWidth;
+		};
 	});
 
 	$: {

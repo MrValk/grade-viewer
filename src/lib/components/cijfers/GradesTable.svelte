@@ -7,6 +7,7 @@
 
 	import { subjectsGrades, setSubjectsGrades } from '$stores/subjectsGrades';
 	import { gradeTypes, setGradeTypes } from '$stores/gradeTypes';
+	import { setCalcGrade } from '$stores/calcGrade';
 
 	import { selectedGrade, setSelectedGrade, resetSelectedGrade } from '$stores/selectedGrade';
 	import {
@@ -82,6 +83,7 @@
 								on:click={() => {
 									setSelectedGrade(subjectGrades.grades[i]);
 									resetSelectedSubject();
+									setCalcGrade(false);
 								}}
 							>
 								<p>
