@@ -25,8 +25,8 @@
 	import { resetSelectedSubject } from '$src/lib/stores/selectedSubject';
 	export let data: LayoutServerData;
 
-	$: grades = data.grades;
-	$: subjects = data.subjects;
+	let grades = data.grades;
+	let subjects = data.subjects;
 	let fetching: boolean = false;
 
 	addFetchedGrades({
@@ -124,6 +124,12 @@
 				<Placeholder />
 			</div>
 		</section>
+	{:else}
+		Data: {JSON.stringify(data)}
+		<br />
+		Grades: {grades}
+		<br />
+		Subjects: {subjects}
 	{/if}
 </section>
 

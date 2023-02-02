@@ -1,9 +1,9 @@
 import { writable } from 'svelte/store';
-import type { Subject } from '$models/subject';
+import type { SubjectGrades } from '$models/subjectGrades';
 
-export const selectedSubject = writable<Subject | null>();
+export const selectedSubject = writable<SubjectGrades | null>();
 
-export function setSelectedSubject(subject: Subject) {
+export function setSelectedSubject(subject: SubjectGrades) {
 	selectedSubject.set(subject);
 }
 

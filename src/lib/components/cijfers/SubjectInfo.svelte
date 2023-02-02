@@ -1,14 +1,40 @@
 <script lang="ts">
 	import { selectedSubject } from '$stores/selectedSubject';
+	import { getGradeTypes } from '$utils/getGradeTypes';
+
+	let gradeTypes: string[] = [];
+	$: if ($selectedSubject) gradeTypes = getGradeTypes($selectedSubject.grades);
 
 	$: subjectData = [
 		{
 			tag: 'Naam',
-			value: `${$selectedSubject?.abbreviation} (${$selectedSubject?.name})`
+			value: `${$selectedSubject?.subject.abbreviation} (${$selectedSubject?.subject.name})`
 		},
 		{
 			tag: 'Docent',
-			value: $selectedSubject?.teacher
+			value: $selectedSubject?.subject.teacher
+		},
+		{
+			tag: 'PTA',
+			value: gradeTypes.includes('PTA')
+				? $selectedSubject?.PTA?.grade.toLocaleString(undefined, {
+						maximumFractionDigits: 1,
+						minimumFractionDigits: 1
+				  }) + ` (${$selectedSubject?.PTA?.weight.toLocaleString()})`
+				: null
+		},
+		{
+			tag: 'OV',
+			value: gradeTypes.includes('OV')
+				? $selectedSubject?.OV?.grade.toLocaleString(undefined, {
+						maximumFractionDigits: 1,
+						minimumFractionDigits: 1
+				  }) + ` (${$selectedSubject?.OV?.weight.toLocaleString()})`
+				: null
+		},
+		{
+			tag: 'Aantal cijfers',
+			value: $selectedSubject?.grades.length
 		}
 	];
 </script>

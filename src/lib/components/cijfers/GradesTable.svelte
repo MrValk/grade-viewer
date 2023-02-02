@@ -54,13 +54,13 @@
 		{#each $subjectsGrades as subjectGrades, i}
 			<tr class={`h-cell ${$subjectsGrades.length === i + 1 ? 'last-grade-row' : ''}`}>
 				<td
-					class={$selectedSubject && $selectedSubject.id === subjectGrades.subject.id
+					class={$selectedSubject && $selectedSubject.subject.id === subjectGrades.subject.id
 						? '!bg-zinc-700/50 font-bold'
 						: 'bg-zinc-600'}
 					><button
 						class="w-48 h-cell outline-none"
 						on:click={() => {
-							setSelectedSubject(subjectGrades.subject);
+							setSelectedSubject(subjectGrades);
 							resetSelectedGrade();
 						}}><h4 class="pl-6 text-left">{subjectGrades.subject.abbreviation}</h4></button
 					></td
