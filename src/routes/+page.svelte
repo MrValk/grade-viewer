@@ -5,7 +5,7 @@
 	import GradeInfo from '$components/cijfers/GradeInfo.svelte';
 	import SubjectInfo from '$components/cijfers/SubjectInfo.svelte';
 	import CumLaude from '$components/cijfers/CumLaude.svelte';
-	import Placeholder from '$components/cijfers/Placeholder.svelte';
+	import ToggleCalcGrade from '$components/cijfers/ToggleCalcGrade.svelte';
 	import FetchError from '$components/cijfers/FetchError.svelte';
 	import Fetching from '$components/cijfers/Fetching.svelte';
 	import YearSelector from '$components/cijfers/YearSelector.svelte';
@@ -121,15 +121,9 @@
 				{/if}
 			</Info>
 			<div>
-				<Placeholder />
+				<ToggleCalcGrade />
 			</div>
 		</section>
-	{:else}
-		Data: {JSON.stringify(data)}
-		<br />
-		Grades: {grades}
-		<br />
-		Subjects: {subjects}
 	{/if}
 </section>
 
