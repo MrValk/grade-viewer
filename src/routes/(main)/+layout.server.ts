@@ -1,11 +1,9 @@
 import type { SchoolYear } from '$models/schoolYear';
+import { redirect } from '@sveltejs/kit';
 import type { LayoutServerLoad } from './$types';
 
 export const load: LayoutServerLoad = async ({ cookies, fetch }) => {
-	async function getMagisterAuth() {
-		const magisterAuth = await cookies.get('magisterAuth');
-		console.log(magisterAuth);
-	}
+	// if (!cookies.get('magisterAuth')) throw redirect(303, '/login');
 
 	async function fetchSchoolYears(): Promise<SchoolYear[]> {
 		const res = await fetch('/api/schoolYears');

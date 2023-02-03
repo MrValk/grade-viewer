@@ -1,6 +1,7 @@
 <script lang="ts">
 	// #region Imports
 	import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
 
 	import GradesTable from '$components/cijfers/GradesTable.svelte';
 	import TotalAverage from '$components/cijfers/TotalAverage.svelte';
@@ -31,8 +32,7 @@
 	import type { Subject } from '$models/subject';
 	// #endregion
 
-	import type { LayoutServerData } from '../$types';
-	import { browser } from '$app/environment';
+	import type { LayoutServerData } from './$types';
 	export let data: LayoutServerData;
 
 	let grades: Grade[] = [];
