@@ -1,4 +1,5 @@
 <script lang="ts">
+	// #region Imports
 	import { onMount } from 'svelte';
 
 	import GradesTable from '$components/cijfers/GradesTable.svelte';
@@ -28,17 +29,25 @@
 	import type { FetchedSubjects } from '$models/fetchedSubjects';
 	import type { Grade } from '$models/grade';
 	import type { Subject } from '$models/subject';
+	// #endregion
 
-	import type { LayoutServerData } from './$types';
+	import type { LayoutServerData } from '../$types';
+	import { browser } from '$app/environment';
 	export let data: LayoutServerData;
 
 	let grades: Grade[] = [];
 	let subjects: Subject[] = [];
-	let fetching: boolean = true;
+	let fetching: boolean = false;
 
-	onMount(fetchGradesAndSubjects);
+	if (!$fetchedGrades.length) fetching = true;
+
+	onMount(() => {
+		if (!$fetchedGrades.length) fetchGradesAndSubjects();
+	});
 
 	async function fetchGradesAndSubjects() {
+		if (!browser) return;
+
 		try {
 			fetching = true;
 

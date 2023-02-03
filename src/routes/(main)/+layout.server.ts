@@ -1,7 +1,12 @@
 import type { SchoolYear } from '$models/schoolYear';
 import type { LayoutServerLoad } from './$types';
 
-export const load: LayoutServerLoad = async ({ fetch }) => {
+export const load: LayoutServerLoad = async ({ cookies, fetch }) => {
+	async function getMagisterAuth() {
+		const magisterAuth = await cookies.get('magisterAuth');
+		console.log(magisterAuth);
+	}
+
 	async function fetchSchoolYears(): Promise<SchoolYear[]> {
 		const res = await fetch('/api/schoolYears');
 		return (await res.json()) as SchoolYear[];

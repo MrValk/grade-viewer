@@ -3,6 +3,8 @@
 
 	export let photo: string;
 	export let name: string;
+
+	$: $page, console.log($page.route.id);
 </script>
 
 <header class="flex items-center w-11/12 justify-between h-20 border-b border-gray-600">
@@ -13,14 +15,14 @@
 		<a class="relative flex flex-col hover:text-gray-300 transition" href="/"
 			>Cijfers<span
 				class={`absolute bottom-0 rounded-full bg-white ${
-					$page.route.id === '/' ? 'w-full' : 'w-0'
+					$page.route.id === '/(main)' ? 'w-full' : 'w-0'
 				}`}
 			/></a
 		>
 		<a class="relative flex flex-col hover:text-gray-300 transition" href="/woordrapporten"
 			>Woordrapporten<span
 				class={`absolute bottom-0 rounded-full bg-white ${
-					$page.route.id === '/woordrapporten' ? 'w-full' : 'w-0'
+					$page.route.id === '/(main)/woordrapporten' ? 'w-full' : 'w-0'
 				}`}
 			/></a
 		>

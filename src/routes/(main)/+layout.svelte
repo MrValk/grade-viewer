@@ -1,8 +1,8 @@
 <script lang="ts">
-	import '../app.scss';
+	import '../../app.scss';
 	import Header from '$components/main/Header.svelte';
 
-	import type { LayoutServerData } from './$types';
+	import type { LayoutServerData } from '../$types';
 
 	export let data: LayoutServerData;
 </script>
