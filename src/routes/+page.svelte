@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	import GradesTable from '$components/cijfers/GradesTable.svelte';
 	import TotalAverage from '$components/cijfers/TotalAverage.svelte';
 	import Info from '$components/cijfers/Info.svelte';
@@ -16,35 +18,29 @@
 	import { fetchFailed, addFetchFailed, removeFetchFailed } from '$stores/fetchFailed';
 	import { selectedGrade } from '$stores/selectedGrade';
 	import { selectedSubject } from '$stores/selectedSubject';
+	import { resetSelectedGrade } from '$stores/selectedGrade';
+	import { resetSelectedSubject } from '$stores/selectedSubject';
 
 	import getFetchedGradesIndex from '$utils/getFetchedGradesIndex';
 	import getFetchedSubjectsIndex from '$utils/getFetchedSubjectsIndex';
 
+	import type { FetchedGrades } from '$models/fetchedGrades';
+	import type { FetchedSubjects } from '$models/fetchedSubjects';
+	import type { Grade } from '$models/grade';
+	import type { Subject } from '$models/subject';
+
 	import type { LayoutServerData } from './$types';
-	import { resetSelectedGrade } from '$src/lib/stores/selectedGrade';
-	import { resetSelectedSubject } from '$src/lib/stores/selectedSubject';
-	import type { FetchedGrades } from '$src/lib/models/fetchedGrades';
-	import type { FetchedSubjects } from '$src/lib/models/fetchedSubjects';
 	export let data: LayoutServerData;
 
-	let grades = data.grades;
-	let subjects = data.subjects;
-	let fetching: boolean = false;
+	let grades: Grade[] = [];
+	let subjects: Subject[] = [];
+	let fetching: boolean = true;
 
-	addFetchedGrades({
-		schoolYearIndex: 0,
-		grades
-	});
-
-	addFetchedSubjects({
-		schoolYearIndex: 0,
-		subjects
-	});
+	onMount(fetchGradesAndSubjects);
 
 	async function fetchGradesAndSubjects() {
 		try {
 			fetching = true;
-			console.log('Fetching...');
 
 			const res1 = await fetch(`/api/grades/${$schoolYearIndex}`);
 			const newGrades = await res1.json();
@@ -75,9 +71,7 @@
 			subjects = newSubjects;
 
 			fetching = false;
-			console.log('Done!');
 		} catch (e) {
-			console.log('Failed');
 			addFetchFailed($schoolYearIndex);
 			fetching = false;
 		}
@@ -95,12 +89,12 @@
 		const fetchedGradesIndex = getFetchedGradesIndex(fetchedGrades, schoolYearIndex);
 		const fetchedSubjectsIndex = getFetchedSubjectsIndex(fetchedSubjects, schoolYearIndex);
 
-		if (schoolYearIndex && !hasFetchedGrades(schoolYearIndex)) await fetchGradesAndSubjects();
+		if (!hasFetchedGrades(schoolYearIndex)) await fetchGradesAndSubjects();
 		else if (fetchedGradesIndex !== -1) grades = fetchedGrades[fetchedGradesIndex].grades;
 
 		if ($fetchFailed.includes(schoolYearIndex)) return;
 
-		if (schoolYearIndex && !hasFetchedSubjects(schoolYearIndex)) await fetchGradesAndSubjects();
+		if (!hasFetchedSubjects(schoolYearIndex)) await fetchGradesAndSubjects();
 		else if (fetchedSubjectsIndex !== -1) subjects = fetchedSubjects[fetchedSubjectsIndex].subjects;
 
 		resetSelectedGrade();
@@ -118,7 +112,7 @@
 			schoolYearName={data.schoolYears[$schoolYearIndex].study.name}
 			retry={fetchGradesAndSubjects}
 		/>
-	{:else if grades && subjects}
+	{:else if grades.length && subjects.length}
 		<section class="flex flex-col w-fit gap-6">
 			<GradesTable {grades} {subjects} />
 			<div class="flex justify-between h-cell gap-6 flex-grow">
