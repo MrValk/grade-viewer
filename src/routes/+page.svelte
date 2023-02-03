@@ -23,6 +23,8 @@
 	import type { LayoutServerData } from './$types';
 	import { resetSelectedGrade } from '$src/lib/stores/selectedGrade';
 	import { resetSelectedSubject } from '$src/lib/stores/selectedSubject';
+	import type { FetchedGrades } from '$src/lib/models/fetchedGrades';
+	import type { FetchedSubjects } from '$src/lib/models/fetchedSubjects';
 	export let data: LayoutServerData;
 
 	let grades = data.grades;
@@ -42,6 +44,7 @@
 	async function fetchGradesAndSubjects() {
 		try {
 			fetching = true;
+			console.log('Fetching...');
 
 			const res1 = await fetch(`/api/grades/${$schoolYearIndex}`);
 			const newGrades = await res1.json();
@@ -72,22 +75,33 @@
 			subjects = newSubjects;
 
 			fetching = false;
+			console.log('Done!');
 		} catch (e) {
+			console.log('Failed');
 			addFetchFailed($schoolYearIndex);
 			fetching = false;
 		}
 	}
 
-	$: {
-		const fetchedGradesIndex = getFetchedGradesIndex($fetchedGrades, $schoolYearIndex);
-		const fetchedSubjectsIndex = getFetchedSubjectsIndex($fetchedSubjects, $schoolYearIndex);
+	$: getNewData($fetchedGrades, $fetchedSubjects, $schoolYearIndex);
 
-		if ($schoolYearIndex && !hasFetchedGrades($schoolYearIndex)) fetchGradesAndSubjects();
-		else if (fetchedGradesIndex !== -1) grades = $fetchedGrades[fetchedGradesIndex].grades;
+	async function getNewData(
+		fetchedGrades: FetchedGrades[],
+		fetchedSubjects: FetchedSubjects[],
+		schoolYearIndex: number
+	) {
+		if (fetching) return;
 
-		if ($schoolYearIndex && !hasFetchedSubjects($schoolYearIndex)) fetchGradesAndSubjects();
-		else if (fetchedSubjectsIndex !== -1)
-			subjects = $fetchedSubjects[fetchedSubjectsIndex].subjects;
+		const fetchedGradesIndex = getFetchedGradesIndex(fetchedGrades, schoolYearIndex);
+		const fetchedSubjectsIndex = getFetchedSubjectsIndex(fetchedSubjects, schoolYearIndex);
+
+		if (schoolYearIndex && !hasFetchedGrades(schoolYearIndex)) await fetchGradesAndSubjects();
+		else if (fetchedGradesIndex !== -1) grades = fetchedGrades[fetchedGradesIndex].grades;
+
+		if ($fetchFailed.includes(schoolYearIndex)) return;
+
+		if (schoolYearIndex && !hasFetchedSubjects(schoolYearIndex)) await fetchGradesAndSubjects();
+		else if (fetchedSubjectsIndex !== -1) subjects = fetchedSubjects[fetchedSubjectsIndex].subjects;
 
 		resetSelectedGrade();
 		resetSelectedSubject();

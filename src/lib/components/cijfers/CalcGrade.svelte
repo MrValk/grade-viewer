@@ -20,6 +20,10 @@
 		reset();
 	}
 
+	$: if ($selectedGradeType) {
+		reset();
+	}
+
 	$: calcData = [
 		{
 			tag: 'PTA',
@@ -101,7 +105,7 @@
 				</td>
 			</tr>
 			{#each calcData as data}
-				{#if data.score}
+				{#if data.score && data.tag === $selectedGradeType}
 					<tr class="h-cell">
 						<td
 							class="p-0 h-cell bg-zinc-600/50 border-zinc-600/60 border-t flex items-center pl-6"
@@ -167,10 +171,10 @@
 			Voor een {wantedGrade.toLocaleString(undefined, {
 				maximumFractionDigits: 1,
 				minimumFractionDigits: 1
-			})} (weging {weight.toLocaleString()}) moet je een {neededGrade.toLocaleString(undefined, {
+			})} moet je een {neededGrade.toLocaleString(undefined, {
 				maximumFractionDigits: 1,
 				minimumFractionDigits: 1
-			})} halen
+			})} (weging {weight.toLocaleString()}) halen
 		{:else}
 			Voer een gewenst gemiddelde en gewicht in
 		{/if}
