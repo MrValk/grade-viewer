@@ -3,7 +3,7 @@ import { redirect } from '@sveltejs/kit';
 import type { LayoutServerLoad } from './$types';
 
 export const load: LayoutServerLoad = async ({ cookies, fetch }) => {
-	// if (!cookies.get('magisterAuth')) throw redirect(303, '/login');
+	if (!cookies.get('magisterAuth')) throw redirect(303, '/login');
 
 	async function fetchSchoolYears(): Promise<SchoolYear[]> {
 		const res = await fetch('/api/schoolYears');

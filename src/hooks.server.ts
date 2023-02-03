@@ -4,8 +4,8 @@ import { MAGISTER_USERNAME, MAGISTER_PASSWORD, MAGISTER_HOSTNAME } from '$env/st
 
 // Initialize Magister client
 //@ts-ignore
-export const client = await Magister.new({
-	username: MAGISTER_USERNAME || '',
-	password: MAGISTER_PASSWORD || '',
-	hostname: MAGISTER_HOSTNAME || ''
-});
+// export const client = await Magister.new({
+// 	username: MAGISTER_USERNAME || '',
+// 	password: MAGISTER_PASSWORD || '',
+// 	hostname: MAGISTER_HOSTNAME || ''
+// });
